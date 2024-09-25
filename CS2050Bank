@@ -1,0 +1,62 @@
+ACCOUNT:
+public class Account {
+	private String accountNumber;
+	double balance;
+	
+		public Account (String accountNumber, double initialBalance) {
+			this.accountNumber = accountNumber;
+			this.balance = initialBalance = 0;
+			
+		}
+
+	
+public String getAccountNumber() {
+	return accountNumber;
+}
+
+public double getBalance() {
+	return balance;
+}
+
+public void setAccountNumber(String accountNumber) {
+	this.accountNumber = accountNumber;
+}
+
+public void setBalaance(double balance) {
+	this.balance = balance;
+  }
+}
+
+CHECKING ACCOUNT:
+public class CheckingAccount extends Account{
+
+	public CheckingAccount(String accountNumber, double initialBalance) {
+		super(accountNumber, initialBalance);
+		}
+
+public void deposit (double amount) {
+	if (amount > 0) {
+		balance += amount;
+		}
+	}
+
+public void withdrawl(double amount) {
+}
+SAVINGS SUBCLASS:
+
+public class SavingsAccount extends Account{
+
+	public SavingsAccount(String accountNumber, double initialBalance) {
+		super(accountNumber, initialBalance);
+		
+		
+	}
+
+public void deposit (double amount) {
+	if (amount > 0) {
+		balance += amount;
+		
+	}
+}
+}
+
